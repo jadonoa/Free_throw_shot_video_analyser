@@ -1,0 +1,33 @@
+{% load static %}
+
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Free Throw Shot Video Analyser{% endblock %}</title>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'theme/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'theme/css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+<body>
+{% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- Bootstrap core JavaScript -->
+   <script src="{% static 'theme/vendor/jquery/jquery.min.js' %}"></script>
+   <script src="{% static 'theme/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

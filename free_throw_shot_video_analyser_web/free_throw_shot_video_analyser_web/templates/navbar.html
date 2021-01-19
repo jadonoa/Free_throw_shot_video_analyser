@@ -1,0 +1,27 @@
+{% load static %}
+
+<!-- <div>
+    {% url 'index' as index_url %}
+    {% url 'about' as about_url %}
+    <span>{% if request.path == index_url %} Home {% else %}<a href="{{ index_url }}">Home</a>{% endif %}</span>
+    <span>{% if request.path == about_url %} About {% else %}<a href="{{ about_url }}">About</a>{% endif %}</span>
+</div> -->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{{ index_url }}">Free Throw Shot Video Analyser</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ index_url }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ about_url }}">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
