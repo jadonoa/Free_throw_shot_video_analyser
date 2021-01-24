@@ -1,0 +1,80 @@
+html {
+  overflow-y: scroll;
+  overflow-x:hidden;
+}
+
+.navbar-custom {
+  background-color: #f05406;     /*#f05406 */ /*#d56806;*/
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-left: 70rem;
+  font-size: 10rem;
+  line-height: inherit;
+  white-space: nowrap;
+  font-family: 'abang';
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  font-size: 5rem;
+}
+
+.about-title {
+  display: inline-block;
+  padding-bottom: 0.3125rem;
+  margin-left: 0.5rem;
+  font-size: 7rem;
+  margin-top: 230px;
+  font-family: 'aquatic';
+}
+
+.about-body {
+  padding-bottom: 0.3125rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+}
+
+@font-face {
+    font-family: 'freestyleregular';
+    src: url('fonts/freestyl-webfont.woff2') format('woff2'),
+         url('fonts/freestyl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aquatic';
+    src: url('fonts/aquatic-personaluse-webfont.woff2') format('woff2'),
+         url('fonts/aquatic-personaluse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'abang';
+    src: url('fonts/abang-webfont.woff2') format('woff2'),
+         url('fonts/abang-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#carouselExampleIndicators {
+    margin-top: 220px;
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 70vh;
+    min-height: 300px;
+    width: 100%;
+}
+
+h3 {
+  font-size: 3rem;
+}
