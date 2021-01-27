@@ -11,8 +11,9 @@ html {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-left: 70rem;
-  font-size: 10rem;
+  position: relative;
+  margin-left: 190rem;
+  font-size: 15rem;
   line-height: inherit;
   white-space: nowrap;
   font-family: 'abang';
@@ -29,15 +30,15 @@ html {
   display: inline-block;
   padding-bottom: 0.3125rem;
   margin-left: 0.5rem;
-  font-size: 7rem;
-  margin-top: 230px;
+  font-size: 10rem;
+  margin-top: 350px;
   font-family: 'aquatic';
 }
 
 .about-body {
   padding-bottom: 0.3125rem;
   margin-left: 0.5rem;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 @font-face {
@@ -66,7 +67,7 @@ html {
 }
 
 #carouselExampleIndicators {
-    margin-top: 220px;
+    margin-top: 345px;
 }
 
 #carouselExampleIndicators .carousel-item {
@@ -76,5 +77,43 @@ html {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 5rem;
+}
+
+.btn-custom {
+  display: block;
+  font-weight: 400;
+  margin-top: 25rem;
+  background-color: #f05406;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 15px solid transparent;
+  padding: 5.375rem 5.75rem;
+  font-size: 10rem;
+  font-family: 'abang';
+  line-height: 1.5;
+  border-radius: 5.0rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#custom-button {
+  position: relative;
+  margin-left: 200rem;
+}
+
+#analyse-button {
+  position: relative;
+  margin-left: 25rem;
+}
+
+#custom-text {
+ font-size: 8rem;
+ color: #aaa;
+ margin-left: 3rem;
+ margin-top: 32rem;
 }
