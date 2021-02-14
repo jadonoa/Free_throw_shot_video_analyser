@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 from . import views
 
@@ -24,3 +26,7 @@ urlpatterns = [
     path('about', views.about, name="about"),
     path('analysis', views.analysis, name="analysis")
 ]
+# at the moment we are not hosting on a web server we are hosting locally so files are saved local
+# when the website goes live media files will be saved on some other web server
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

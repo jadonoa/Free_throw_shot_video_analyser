@@ -5,7 +5,24 @@
 
 {% block content %}
 <div>
- <h2 class="about-title">This Is The Analysis Of Your Video</h2>
- <p class="about-body">Give Analysis</p>
+    {% if originalURL %}
+        <h4>Original Video:</h4>
+        <a href="{{ originalURL }}"><button class="btn btn-analyse-custom btn-dark" id="download-button">Re-Download</button></a>
+        <!--<video width="800" height="720" id="video" controls autoplay>
+            <source src="{{ originalURL }}" type="video/mov">
+        </video>-->
+    {% endif %}
 </div>
+
+<div>
+    {% if trackingVideoURL %}
+        <h4>Tracking Video:</h4>
+        <a href="{{ trackingVideoURL }}"><button class="btn btn-analyse-custom btn-dark">Download</button></a>
+    {% endif %}
+
+    <!--<video width="800" height="720" id="video" controls autoplay>
+        <source src="{{ trackingVideoURL }}" type="video/mp4"></source>
+    </video>-->
+</div>
+
 {% endblock %}
