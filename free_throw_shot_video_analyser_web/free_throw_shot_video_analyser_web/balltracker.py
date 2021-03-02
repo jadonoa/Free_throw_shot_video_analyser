@@ -118,3 +118,36 @@ def frames_to_video():
             cv2.waitKey(1)
 
     out.release()
+
+
+def createBlankFrames(path):
+    capture = cv2.VideoCapture(path)
+
+    # Allow the camera or video file to warm up
+    time.sleep(2.0)
+
+    cnt = 0
+
+    # Main loop
+    while True:
+        # Get the current frame
+        frame = capture.read()
+
+        # Handle the frame from VideoCapture or VideoStream
+        frame = frame[1]
+
+        # If we are viewing a video and we did not grab a frame, then we have reached the end of the video
+        if frame is None:
+            break
+
+        cv2.imwrite(frames_path + str(cnt) + '.png', frame)
+        cnt += 1
+
+        key = cv2.waitKey(1) & 0xFF
+
+        # if the 'q' key is pressed, stop the loop
+        if key == ord("q"):
+            break
+
+    # otherwise, release the camera
+    capture.release()
